@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="description" content="Seeing the Forest and the Trees: A Robust Global-Local Approach for Text-Based Person Search">
+  <meta property="og:title" content="Seeing the Forest and the Trees: A Robust Global-Local Approach for Text-Based Person Search"/>
+  <meta property="og:description" content="ROGLE enhances both global and local visual-textual alignment by combining large-scale caption enrichment with an automated region-to-sentence matching strategy."/>
+  <meta property="og:url" content="URL_OF_THE_WEBSITE"/>
+  <meta property="og:image" content="static/images/rogle_overview.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <meta name="twitter:title" content="Seeing the Forest and the Trees: A Robust Global-Local Approach for Text-Based Person Search">
+  <meta name="twitter:description" content="A novel framework for text-based person search that achieves state-of-the-art results by aligning both holistic and part-level semantics.">
+  <meta name="twitter:image" content="static/images/rogle_twitter_banner.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="Text-Based Person Search, TBPS, ROGLE, Computer Vision, Deep Learning, Person Re-identification">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Seeing the Forest and the Trees: A Robust Global-Local Approach for Text-Based Person Search</title>
+  <link rel="icon" type="image/x-icon" href="static/images/logo.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Seeing the Forest and the Trees: A Robust Global-Local Approach for Text-Based Person Search</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                Anonymous
+              </span>
+            </div>
+
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <span class="link-block">
+                        <a href="YOUR_PAPER_PDF_LINK.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- <span class="link-block">
+                    <a href="https://github.com/YOUR_REPO_HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+
+                <!-- <span class="link-block">
+                  <a href="YOUR_ARXIV_LINK" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/3.jpg" alt="ROGLE Framework Overview" style="max-width:100%; height:auto;"/>
+      <h2 class="subtitle has-text-left">
+Overview of our ROGLE framework. The input image is segmented into semantic parts via SAM. We use three types of textual supervision: a global long caption, a concise short caption, and region-level captions paired with local image patches to achieve robust global-local text-image alignment.</h2>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Text-Based Person Search (TBPS) aims to retrieve pedestrian images from large-scale galleries using natural language queries. Despite the recent progress in vision-language modeling, existing TBPS systems still suffer from two fundamental limitations: semantic sparsity in textual supervision and weak alignment between fine-grained image regions and rich textual descriptions. To address these challenges, we propose ROGLE (Robust Global-Local Embedding), a unified framework that enhances both global and local visual-textual alignment by combining large-scale caption enrichment with an automated region-to-sentence matching strategy. In addition, we introduce the P-VLG Benchmark, a new dataset constructed for precise region-level grounding, which includes over 100,000 annotated regions and rich descriptive captions. P-VLG not only enables fine-grained training but also facilitates detailed analysis under varying query complexities. Extensive experiments on P-VLG and other TBPS benchmarks demonstrate that our method significantly outperforms existing approaches, particularly under long-form queries that require nuanced and detailed visual grounding.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container is-max-desktop" style="margin-top: 2em; margin-bottom: 2em;">
+  <div class="columns is-centered">
+    <div class="column is-four-fifths has-text-centered">
+      <img src="static/images/2.jpg" alt="Region-to-Sentence Matching Illustration" style="max-width:110%; height:auto; margin-top:2em;"/>
+      <p style="margin-top:1em; text-align:justify;">
+        Illustration of the <b>Region-to-Sentence Matching (RSM)</b> process in our P-VLG Benchmark. Given a pedestrian image and its caption, SAM extracts region proposals, and CLIP encoders are used to compute cross-modal similarity to find the best region-sentence pairs for fine-grained supervision.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- 
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Experimental Results</h2>
+
+    <div class="columns is-centered">
+      <div class="column is-four-fifths has-text-centered">
+        <img src="static/images/cuhk_pedes_results.png" alt="CUHK-PEDES Results" style="max-width:100%; height:auto;"/>
+        <p style="margin-top:1em; text-align:justify;">
+          <b>CUHK-PEDES:</b> Experimental results on the CUHK-PEDES dataset. Our ROGLE method achieves the best performance across all metrics, significantly outperforming existing methods.
+        </p>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-four-fifths has-text-centered">
+        <img src="static/images/icfg_pedes_results.png" alt="ICFG-PEDES Results" style="max-width:100%; height:auto;"/>
+        <p style="margin-top:1em; text-align:justify;">
+          <b>ICFG-PEDES:</b> Experimental results on the ICFG-PEDES dataset. ROGLE also achieves state-of-the-art retrieval performance on this dataset.
+        </p>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-four-fifths has-text-centered">
+        <img src="static/images/rstpreid_results.png" alt="RSTPReid Results" style="max-width:100%; height:auto;"/>
+        <p style="margin-top:1em; text-align:justify;">
+          <b>RSTPReid:</b> Experimental results on the RSTPReid dataset. ROGLE demonstrates strong performance, validating the generalization and robustness of our approach.
+        </p>
+      </div>
+    </div>
+    
+    <div class="columns is-centered">
+      <div class="column is-four-fifths has-text-centered">
+        <img src="static/images/pvlg_results.png" alt="P-VLG Results" style="max-width:100%; height:auto;"/>
+        <p style="margin-top:1em; text-align:justify;">
+          <b>P-VLG:</b> Experimental results on our proposed P-VLG dataset. ROGLE sets a new state-of-the-art, confirming its robustness with richly detailed descriptions.
+        </p>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{ROGLE2025,
+  title={ROGLE: Robust Global-Local Embedding for Text-Based Person Search},
+  author={Anonymous},
+  journal={Anonymous Submission},
+  year={2025}
+}</code></pre>
+    </div>
+</section> -->
+
+  <!-- <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer> -->
+
+  </body>
+  </html>
